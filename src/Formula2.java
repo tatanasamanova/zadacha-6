@@ -10,17 +10,18 @@ class Formula2 {
     }
 
     public void displayFormula() {
-        double y = Math.sqrt(b * b - 4 * a * c) / 2;
+        double y1=b * b-4*a*c;
+        double y = Math.sqrt(y1) / 2;
         System.out.println(y);
     }
 
 
 
-    public void main(String []args){
-        Formula2 formm=new Formula2(3,4,5.2);
+    public static void main(String []args){
+        Formula2 formm=new Formula2(1,4,2);
         formm.displayFormula();
         formm.c=5;
-        Formula2 formm2=new Formula2(5,6,8.8);
+        Formula2 formm2=new Formula2(2,8.8,4  );
         formm2.displayFormula();
         formm.a=5;
     }
